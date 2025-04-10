@@ -1,5 +1,7 @@
 package autorennen;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 
 public class Rennen {
@@ -59,14 +61,16 @@ public class Rennen {
         for (int i = 0; i < autos.length; i++) {
             autos[i].printAuto();
         }
+        System.out.println(("Rangliste:"));
+        Auto[] platzierung = Arrays.copyOf(autos, autos.length);
+        Arrays.sort(platzierung, Comparator.comparingInt(Auto::getZurueckgelegteKilometer).reversed()); //Auto::getPosition = Sortiert nach zurückgelegte Kilometer
+        //.reversed sagt es soll von Groß nach klein sortiert werden
 
-        int anzahlPunkte = streckenLaenge/10;
 
-        for(int f = 0; f < autos.length ; f++){
-
-                    String punkte = ".".repeat(anzahlPunkte);
-                    System.out.println(punkte);
+        for (int i = 1; i < platzierung.length; i++){
+            System.out.println(i + ". Platz: " + platzierung[i].getName() + " " + platzierung[i].getZurueckgelegteKilometer());
         }
+
 
 
     }
