@@ -1,5 +1,6 @@
 package autorennen;
 
 public enum Typ {
-    VW_GOLF
+    VW_GOLF,
+    OPEL_ASTRA
 }
