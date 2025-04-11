@@ -16,5 +16,11 @@ public class Main {
         Rennen rennen1 = new Rennen(100, auto1,auto2,auto3,auto4, auto5, auto6, auto7, auto8);
         rennen1.starten();
         rennen1.printRennen();
+        Auto auto9 = new Auto("Karina", 9,Typ.RENAULT_MEGANE);
+        Rennen rennen2 = new Rennen(100, auto1,auto2,auto3,auto4, auto5, auto6, auto7, auto8);
+        rennen2.autoHinzufuegen(auto9);
+        rennen2.starten();
+        rennen2.printRennen();
+
     }
 }

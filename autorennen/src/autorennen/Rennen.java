@@ -2,7 +2,7 @@ package autorennen;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Random;
+
 
 public class Rennen {
     Auto[]autos;
@@ -52,6 +52,18 @@ public class Rennen {
 
        }
     }
+
+    public void autoHinzufuegen(Auto auto){
+        Auto[] neueTeilnehmerliste = new Auto[autos.length +1];
+        for(int i = 0; i < autos.length; i++){
+            neueTeilnehmerliste[i]=autos[i];
+        }
+        neueTeilnehmerliste[autos.length]= auto;
+        autos = neueTeilnehmerliste;
+
+    }
+
+
     public void printRennen(){
 
         System.out.println("Rennen:");
@@ -67,8 +79,8 @@ public class Rennen {
         //.reversed sagt es soll von Groß nach klein sortiert werden
 
 
-        for (int i = 1; i < platzierung.length; i++){
-            System.out.println(i + ". Platz: " + platzierung[i].getName() + " " + platzierung[i].getZurueckgelegteKilometer());
+        for (int i = 0; i < platzierung.length; i++){
+            System.out.println((i +1) + ". Platz: " + platzierung[i].getName() + " " + platzierung[i].getZurueckgelegteKilometer());
         }
 
 
