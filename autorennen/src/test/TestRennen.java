@@ -2,7 +2,8 @@ package test;
 
 import autorennen.Auto;
 import autorennen.Rennen;
-import autorennen.Typ;
+import autorennen.Hersteller;
+import autorennen.Modell;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestRennen {
     @Test
     void testGebeErstenPlatzZurück(){
-        Auto auto1 = new Auto("Hans",9, Typ.VW_GOLF);
+        Auto auto1 = new Auto("Hans",9, Hersteller.VW, Modell.SUV);
         Rennen rennen1 = new Rennen(100, auto1);
 
         assertEquals(auto1,rennen1.gebeErstenPlatzZurueck()," Die Methode erwartet als Fahrer:" + auto1.getName() + " hat aber als Ergebnis: " + rennen1.gebeErstenPlatzZurueck().getName());
@@ -26,7 +27,7 @@ public class TestRennen {
     }
     @Test
     void testRennenStarten(){
-        Auto auto1 = new Auto("Hans",9, Typ.VW_GOLF);
+        Auto auto1 = new Auto("Hans",9, Hersteller.VW, Modell.PICK_UP);
         Rennen rennen1 = new Rennen(100, auto1);
         assertEquals(auto1,rennen1.gebeErstenPlatzZurueck()," Die Methode erwartet als Fahrer:" + auto1.getName() + " hat aber als Ergebnis: " + rennen1.gebeErstenPlatzZurueck().getName());
     }

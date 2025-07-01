@@ -1,47 +1,14 @@
 package autorennen;
 
-public class Auto {
-    private String name;
-    private int zurueckgelegteKilometer;
-    private int geschwindikeitslevel;
-    private Typ hersteller;
+public class Auto extends BasisAuto {
 
-    public Auto(String name, int geschwindikeitslevel, Typ hersteller){
-        this.name = name;
-        this.geschwindikeitslevel = geschwindikeitslevel;
-        this.hersteller = hersteller;
-    }
 
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String name){
-        this.name = name;
+    public Auto(String name, int geschwindikeitslevel, Hersteller hersteller, Modell modell){
+        super(name, geschwindikeitslevel, hersteller, modell);
     }
 
     public int getZurueckgelegteKilometer(){
         return zurueckgelegteKilometer;
-    }
-
-    public void setZurueckgelegteKilometer(int zurueckgelegteKilometer){
-        this.zurueckgelegteKilometer = zurueckgelegteKilometer;
-    }
-
-    public int getGeschwindikeitslevel(){
-        return geschwindikeitslevel;
-    }
-
-    public void setGeschwindikeitslevel(int geschwindikeitslevel){
-        this.geschwindikeitslevel = geschwindikeitslevel;
-    }
-
-    public Typ getHersteller(){
-        return hersteller;
-    }
-
-    public void setHersteller(Typ hersteller) {
-        this.hersteller = hersteller;
     }
 
     public void fahren(){

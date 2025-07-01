@@ -62,7 +62,20 @@ public class Rennen {
         autos = neueTeilnehmerliste;
 
     }
+    public void autoEntfernen(Auto auto){
+        Auto[] neueTeilnehmerliste = new Auto[autos.length -1];
+        int index = 0;
+        for(int i = 0; i < autos.length;i++){
+            if(autos[i] != auto){
+                if(index < neueTeilnehmerliste.length) {
+                    neueTeilnehmerliste[index] = autos[i];
+                    index++;
+                }
+            }
 
+        }
+        autos = neueTeilnehmerliste;
+    }
 
     public void printRennen(){
 
