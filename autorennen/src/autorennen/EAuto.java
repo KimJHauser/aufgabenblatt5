@@ -8,9 +8,14 @@ public class EAuto extends BasisAuto {
         super(name, geschwindikeitslevel, hersteller, modell);
     }
 
+    public int getZurueckgelegteKilometer(){
+        return zurueckgelegteKilometer;
+    }
 
     @Override
     public void fahren() {
-        zurueckgelegteKilometer = zurueckgelegteKilometer + (int) (((Math.random() * 10)*geschwindikeitslevel)+1);
+        zurueckgelegteKilometer = zurueckgelegteKilometer + (int) ((((Math.random() * 10)/2)*geschwindikeitslevel)+1);
     }
+
+
 }

@@ -26,4 +26,14 @@ public abstract class BasisAuto implements Fahrzeug {
     public String getName(){
         return name;
     }
+
+    public void printAuto(){
+        System.out.println("Name: " + name);
+        System.out.println("zurückgelegte Kilometer: " + zurueckgelegteKilometer);
+        System.out.println("Fahrzeugtyp: " + getClass().getSimpleName());
+        System.out.println("Geschwindigkeitslevel: " + geschwindikeitslevel);
+        System.out.println("Hersteller: " + hersteller);
+        System.out.println("Modell: " + modell);
+        System.out.println("---------------------------------------------------------");
+    }
 }

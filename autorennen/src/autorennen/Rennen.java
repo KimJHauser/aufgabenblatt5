@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 
 public class Rennen {
-    Auto[]autos;
+    Fahrzeug[]fahrzeuge;
     int streckenLaenge;
 
     public int getStreckenLaenge() {
@@ -16,24 +16,24 @@ public class Rennen {
         this.streckenLaenge = streckenLaenge;
     }
 
-    public Rennen(int streckenLaenge, Auto... autos){
-        this.autos = autos;
+    public Rennen(int streckenLaenge, Fahrzeug... fahrzeuge){
+        this.fahrzeuge = fahrzeuge;
         this.streckenLaenge = streckenLaenge;
     }
 
-    public Auto gebeErstenPlatzZurueck(){
-        Auto erstesAuto =null;
-        for (int i =0; i < autos.length; i++){
-            if (autos[i]!= null) {
-                if (erstesAuto==null){
-                    erstesAuto = autos[i];
+    public Fahrzeug gebeErstenPlatzZurueck(){
+        Fahrzeug erstesFahrzeug =null;
+        for (int i =0; i < fahrzeuge.length; i++){
+            if (fahrzeuge[i]!= null) {
+                if (erstesFahrzeug ==null){
+                    erstesFahrzeug  = fahrzeuge[i];
                 }
-                if (erstesAuto.getZurueckgelegteKilometer() < autos[i].getZurueckgelegteKilometer()){
-                    erstesAuto = autos[i];
+                if (erstesFahrzeug.getPosition() < fahrzeuge[i].getPosition()){
+                    erstesFahrzeug  = fahrzeuge[i];
                 }
             }
         }
-        return erstesAuto;
+        return erstesFahrzeug ;
     }
 
     public void starten(){
@@ -44,56 +44,57 @@ public class Rennen {
         System.out.println("Los");
         while(ersterPlatz<streckenLaenge) {
 
-           for (int i = 0; i < autos.length; i++) {
-               autos[i].fahren();
+           for (int i = 0; i < fahrzeuge.length; i++) {
+               fahrzeuge[i].fahren();
            }
-           ersterPlatz = gebeErstenPlatzZurueck().getZurueckgelegteKilometer();
+           ersterPlatz = gebeErstenPlatzZurueck().getPosition();
 
 
        }
     }
 
-    public void autoHinzufuegen(Auto auto){
-        Auto[] neueTeilnehmerliste = new Auto[autos.length +1];
-        for(int i = 0; i < autos.length; i++){
-            neueTeilnehmerliste[i]=autos[i];
+    public void fahrzeugHinzufuegen(Fahrzeug fahrzeug){
+        Fahrzeug[] neueTeilnehmerliste = new Fahrzeug[fahrzeuge.length +1];
+        for(int i = 0; i < fahrzeuge.length; i++){
+            neueTeilnehmerliste[i]=fahrzeuge[i];
         }
-        neueTeilnehmerliste[autos.length]= auto;
-        autos = neueTeilnehmerliste;
+        neueTeilnehmerliste[fahrzeuge.length]= fahrzeug;
+        fahrzeuge = neueTeilnehmerliste;
 
     }
-    public void autoEntfernen(Auto auto){
-        Auto[] neueTeilnehmerliste = new Auto[autos.length -1];
+    public void fahrzeugEntfernen(Fahrzeug fahrzeug){
+        Fahrzeug[] neueTeilnehmerliste = new Fahrzeug[fahrzeuge.length -1];
         int index = 0;
-        for(int i = 0; i < autos.length;i++){
-            if(autos[i] != auto){
+        for(int i = 0; i < fahrzeuge.length;i++){
+            if(fahrzeuge[i] != fahrzeug){
                 if(index < neueTeilnehmerliste.length) {
-                    neueTeilnehmerliste[index] = autos[i];
+                    neueTeilnehmerliste[index] = fahrzeuge[i];
                     index++;
                 }
             }
 
         }
-        autos = neueTeilnehmerliste;
+        fahrzeuge = neueTeilnehmerliste;
     }
 
     public void printRennen(){
 
         System.out.println("Rennen:");
         System.out.println("Streckenlänge: "  + streckenLaenge);
-        System.out.println("Rennenteilnehmer: " +autos.length);
+        System.out.println("Rennenteilnehmer: " +fahrzeuge.length);
         System.out.println("---------------------------------------------------------");
-        for (int i = 0; i < autos.length; i++) {
-            autos[i].printAuto();
+        for (int i = 0; i < fahrzeuge.length; i++) {
+             BasisAuto auto = (BasisAuto) fahrzeuge[i];
+            auto.printAuto();
         }
         System.out.println(("Rangliste:"));
-        Auto[] platzierung = Arrays.copyOf(autos, autos.length);
-        Arrays.sort(platzierung, Comparator.comparingInt(Auto::getZurueckgelegteKilometer).reversed()); //Auto::getPosition = Sortiert nach zurückgelegte Kilometer
+        Fahrzeug[] platzierung = Arrays.copyOf(fahrzeuge, fahrzeuge.length);
+        Arrays.sort(platzierung, Comparator.comparingInt(Fahrzeug::getPosition).reversed()); //Auto::getPosition = Sortiert nach zurückgelegte Kilometer
         //.reversed sagt es soll von Groß nach klein sortiert werden
 
 
         for (int i = 0; i < platzierung.length; i++){
-            System.out.println((i +1) + ". Platz: " + platzierung[i].getName() + " " + platzierung[i].getZurueckgelegteKilometer());
+            System.out.println((i +1) + ". Platz: " + platzierung[i].getName() + " " + platzierung[i].getPosition());
         }
 
 
