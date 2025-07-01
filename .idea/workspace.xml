@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bbfe90dc-1637-45d3-8a78-d8c3ceea6491" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/autorennen/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/autorennen/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autorennen/src/autorennen/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/autorennen/src/autorennen/Auto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autorennen/src/autorennen/BasisAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/autorennen/src/autorennen/BasisAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autorennen/src/autorennen/EAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/autorennen/src/autorennen/EAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autorennen/src/autorennen/Rennen.java" beforeDir="false" afterPath="$PROJECT_DIR$/autorennen/src/autorennen/Rennen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/autorennen/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/autorennen/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/autorennen/autorennen/Auto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/autorennen/autorennen/Auto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/autorennen/autorennen/BasisAuto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/autorennen/autorennen/BasisAuto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/autorennen/autorennen/EAuto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/autorennen/autorennen/EAuto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/autorennen/autorennen/Rennen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/autorennen/autorennen/Rennen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/autorennen/test/TestRennen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/autorennen/test/TestRennen.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="autorennen" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2v7pvelb45EpZMdIlfIdrjlp6Jl" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.TestAuto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestAuto.testFahren.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRennen.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRennen.testGebeErstenPlatzZurück.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;autorennen&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/khu/Documents/aufgabenblatt5&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="autorennen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAuto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autorennen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestAuto" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAuto.testFahren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autorennen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestAuto" />
+      <option name="METHOD_NAME" value="testFahren" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRennen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autorennen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestRennen" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRennen.testGebeErstenPlatzZurück" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autorennen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestRennen" />
+      <option name="METHOD_NAME" value="testGebeErstenPlatzZurück" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestRennen" />
+        <item itemvalue="JUnit.TestRennen.testGebeErstenPlatzZurück" />
+        <item itemvalue="JUnit.TestAuto.testFahren" />
+        <item itemvalue="JUnit.TestAuto" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbfe90dc-1637-45d3-8a78-d8c3ceea6491" name="Changes" comment="" />
+      <created>1743506198643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743506198643</updated>
+    </task>
+    <servers />
+  </component>
+</project>
